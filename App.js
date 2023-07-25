@@ -83,6 +83,7 @@ const FormComponent = () => {
 
   const onSelectPelabuhan = (item) => {
     setPelabuhan(item.ur_pelabuhan);
+    setDataNegara([]);
   };
 
   const filterPelabuhan = dataPelabuhan.filter((item) => {
