@@ -84,10 +84,11 @@ const FormComponent = () => {
   const onSelectPelabuhan = (item) => {
     setPelabuhan(item.ur_pelabuhan);
     setDataNegara([]);
+    setDataPelabuhan([]);
   };
 
   const filterPelabuhan = dataPelabuhan.filter((item) => {
-    return item.ur_pelabuhan.toLowerCase().includes(pelabuhan);
+    return item.ur_pelabuhan.toLowerCase().includes(pelabuhan.toLowerCase());
   });
 
   const fetchDataur = async () => {
