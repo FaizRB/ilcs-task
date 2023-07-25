@@ -66,7 +66,7 @@ const FormComponent = () => {
   };
 
   const filterNegara = dataNegara.filter((item, i) => {
-    return item.ur_negara.toLowerCase().includes(negara.toLowerCase());
+    return item.ur_negara.toLowerCase().includes(negara.toLowerCase()); 
   });
 
   const fetchDataPel = async () => {
