@@ -95,7 +95,7 @@ const FormComponent = () => {
       const response = await axios.get(
         `https://insw-dev.ilcs.co.id/n/barang?hs_code=${kode}`
       );
-      setUraian(response.data.data[0].uraian_id);
+      setUraian(response.data.data[0].sub_header + " "+response.data.data[0].uraian_id);
       persenTase();
     } catch (error) {
       console.error("There was an error!", error);
